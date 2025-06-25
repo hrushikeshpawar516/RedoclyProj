@@ -81,6 +81,7 @@ public class StudentController {
 
 	public ResponseEntity<?> findStudentById(  
         	@RequestParam(name = "sid") Long id) {
+		System.out.println("StudentController.findStudentById()");
 		Optional<Student> st=ser.findStudentbyId(id);
 		if(st.isPresent())
 		return new ResponseEntity<Student>(st.get(),HttpStatus.OK);
