@@ -6,5 +6,7 @@ public class RedoclyController {
 		// TODO Auto-generated method stub
 
 	}
+	int methodOne() {
+		return 0;}
 
 }
