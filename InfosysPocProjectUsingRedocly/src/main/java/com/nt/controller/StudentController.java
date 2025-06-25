@@ -71,6 +71,7 @@ public class StudentController {
     @Operation(summary = "Find All Student", description = "This method help in Finding all student details ")
 
 	public ResponseEntity<List<Student>> findAllStudentDetails() {
+		System.out.println("StudentController.findAllStudentDetails()");
 		return new ResponseEntity<List<Student>>(ser.findAllStudentDetails(),HttpStatus.OK);
 	}
 	
