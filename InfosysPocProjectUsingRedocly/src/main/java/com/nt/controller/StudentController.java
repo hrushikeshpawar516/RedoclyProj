@@ -94,6 +94,7 @@ public class StudentController {
 	@Operation(summary = "Delete Student", description = "This method help in Deleting the student data by using Id")
 
 	public ResponseEntity<?> deleteStudentById(@RequestParam(name = "sid")  Long id) {
+		System.out.println("StudentController.deleteStudentById()");
 		Optional<Student> st=ser.findStudentbyId(id);
 		if(st.isPresent()) {
 			ser.deleteStudentbyId(id);
