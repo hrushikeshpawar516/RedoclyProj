@@ -7,4 +7,7 @@ public class RedoclyController {
 
 	}
 
+	void methodTwo() {
+		System.out.println("RedoclyController.methodTwo()");
+	}
 }
